@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+
+<!-- FontAwesome v6.6.6 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -37,99 +42,114 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="manrope">
-    <header class="container mx-auto">
-      <nav>
+    <header class=" mt-10 md:container mx-auto  ">
+      <nav >
         <div class="navbar bg-base-100">
           <div class="flex-1">
-            <a class="font-bold text-2xl">  <i class="fa-solid -rotate-45 font-bold text-xl bg-lime-400  rounded-[100%] fa-arrow-right">→</i> Rinterio</a>
+            <a class="font-bold text-2xl"> <i class="fa-solid fa-arrow-right -rotate-45 bg-lime-400 rounded-full  "></i>  Rinterio</a>
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 font-light  ">
+            <ul class="menu menu-horizontal px-1">
               <li class="hover:font-bold"><a>Home</a></li>
               <li class="hover:font-bold"><a>services</a></li>
               <li class="hover:font-bold"><a>protfolio</a></li>
               <li class="hover:font-bold"><a>blogs</a></li>
               <li class="hover:font-bold"><a>contact Us</a></li>
-            </ul>
-          </div>
-          <button class="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 navbar-center hidden lg:flex"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button>
-          <div
-            tabindex="0"
-            role="button"
-            class="btn btn-ghost btn-circle navbar-center hidden lg:flex"
-          >
-            <div class="indicator">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
-              <span class="badge badge-sm indicator-item">8</span>
-            </div>
           </div>
           <div class="">
-            <button
-              class="hidden md:flex btn bg-lime-400 rounded-3xl font-bold"
-            >
-              Book Consult <i class="fa-solid -rotate-45 font-bold text-xl bg-black text-white rounded-[100%] fa-arrow-right">→</i>
-            </button>
-          </div>
-          <div class="dropdown">
+            <a class="hidden md:flex btn bg-lime-400 rounded-3xl font-bold">Book consult 
+
+
+              <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full text-2xl " style="color: #ffffff;" ></i>
+            </a>
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
+                stroke="currentColor">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
+                  d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li><a>Home</a></li>
-              <li><a>services</a></li>
-              <li><a>protfolio</a></li>
-              <li><a>blogs</a></li>
-              <li><a>contact Us</a></li>
-            </ul>
           </div>
+          
         </div>
       </nav>
+
+      <!-- hero 1-->
+
+      <div class="hero bg-bg-white min-h-screen">
+        <div class="hero-content flex-col ">
+          <img
+            src="./images/banner.png"
+            class="max-w-sm rounded-lg shadow-2xl" alt="house" />
+          <div class="text-center">
+            <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+            <p class="py-6">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+            </p>
+            <button class="btn bg-lime-200 rounded-full font-bold">View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-lime-400 rounded-full  "></i></button>
+          </div>
+        </div>
+      </div>
+
     </header>
-    <main class="container mx-auto"></main>
+    <main class=" mx-auto bg-base-200 ">
+<!-- hero 2 -->
+<div class="hero bg-base-200 ">
+  <div class="hero-content flex-col-reverse my-16 lg:flex-row-reverse">
+    <img 
+      src="./images/Rectangle.png" alt="house"
+      class="max-w-sm rounded-lg shadow-2xl" />
+    <div>
+      <h1 class="text-5xl font-bold">We design thoughtful, liveable spaces</h1>
+      <p class="py-6">
+        The barn house captivates with its blend of rustic charm and <br>
+        modern sophistication, featuring weathered wood, sleek metal accents.
+      </p>
+     
+      <div class="grid">
+        <div class="hero rounded-2xl bg-white ">
+        <div class="hero-content  lg:flex-row">
+          <img
+            src="./images/commercial.png"
+            class="max-w-sm rounded-lg shadow-2xl" alt="house"/>
+          <div>
+            <h5 class="text-xl font-bold">Commercial</h5>
+            <p class="py-2">
+              The barn house captivates with its blend of rustic charm and modern.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="hero rounded-2xl bg-white my-5 ">
+        <div class="hero-content  lg:flex-row">
+          <img
+            src="./images/residential.png"
+            class="max-w-sm rounded-lg shadow-2xl" alt="house" />
+          <div>
+            <h5 class="text-xl font-bold">Residential</h5>
+            <p class="py-2">
+              The barn house captivates with its blend of rustic charm and modern.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </main>
     <footer></footer>
   </body>
 </html>
